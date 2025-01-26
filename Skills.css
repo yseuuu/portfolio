@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: rgb(191, 64, 191);
+    text-shadow: 0 0 10px rgb(191, 64, 191) ;
+}
+
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a{
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: rgb(191, 64, 191);
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+
+
+
+
+
+a, i {
+  color: white;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0057B7 50%, #FFD700 90%);
+    clip-path: circle(30% at right 70%);
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.container .card .content .contentBx {
+  padding: 0 24px;  
+}
+
+.container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .content .contentBx span {
+  display: block;
+  color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+  letter-spacing: 1px;
+    text-transform: initial;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.container .card .sci {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+}
+
+.container .card .sci li {
+    list-style: none;
+    margin: 0 6px;
+    transform: translateY(40px);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.container .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.credits {
+  position: fixed;
+  color: white;
+  bottom: 32px;
+}
+
+
+
+.card button{
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color:  rgb(191, 64, 191);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.card button:hover{
+    scale: 1.1;
+    color: rgb(191, 64, 191);
+    border: 2px solid  rgb(191, 64, 191);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px 5px  rgb(191, 64, 191);
+}
+
+@keyframes animate {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@media (max-width:884px) {
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,
+    .cancel{
+        display: block;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+    .social-links i{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container .image{
+        z-index: -1;
+        width: 50%;
+        height: 60%;
+    }
+}
+
+
+@media (max-width:440px) {
+    .main-container .image{
+        width: 70%;
+        height: 60%;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .main-container button{
+        margin-top: 15px;
+    }
+}
+
