@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+p {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-size: 7px;
+  line-height: 7px;
+  background: url("shit.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  background-size: 600px;
+  background-position: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  word-break: break-all;
+  filter: contrast(1.1);
+}
