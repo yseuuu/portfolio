@@ -1,75 +1,144 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='web.css' rel='stylesheet'>
+  <title></title>
 </head>
+
+
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Nico <span> Mallorca </span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Service</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
-
-            </div>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Service</a>
-                <a href="">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
+  <header>
+    <div class="company-logo">Essence</div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="web.html" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">BLANK</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">BLANK</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">BLANK</a></li>
+      </ul>
     </nav>
-    <section>
-        <div class="main-container">
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Nico</span></h1>
-                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" class="typewriter">I'm a <span class="typewriter-text"></span>
-                    
-
-                </div>
-
-
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am Nico Mallorca, a college student who taking a Multimedia Art course. A passionate 3D Model artist and Digital illustrator portrait. My work focuses on bringing ideas to life through digital illustrations and 3D modeling, blending creativity with technical skills. Though I'm still growing in the field, I've had the opportunity to work on commissions for classmates and schoolmates, honing my craft and exploring different styles.</p><p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
-                    I enjoy experimenting with stylized and semi-realistic art, pushing my skills to create immersive visuals. Through my portfolio, I hope to showcase my artistic journey and share my passion for storytelling through digital and 3D art.
-                </p>
-
-<p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
-Let’s create something amazing together!  </p>
-                <div class="social-links">
-                    <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://www.instagram.com/yseuuu__/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/nico.escobar.94" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
-                    
-                </div>
-                <div class="btn" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">
-                    <button> <a href="portfolio.html"> PORTFOLIO </a> </button>
-                </div>
-            </div>
-            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
-                <img src="home-img.png" alt="">
-            </div>
-        </div>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+  <main>
+    <!-- HOME SECTION -->
+    <section class="container section-1">
+      <div class="slogan">
+        <h1 class="company-title">WEAR YOUR ESSENCE, LEAVE A LEGACY</h1>
+        <h2 class="company-slogan">
+         Velour Essence is more than just a fragrance brand — it’s an experience of pure sophistication and timeless beauty. Inspired by the softness of velvet and the power of unforgettable aromas, each scent is crafted with care and creativity. 
+        </h2>
+      </div>
+      <div class="home-computer-container">
+        <img class="home-computer" src="es.jpg" alt="a computer in dark with shadow" class="home-img">
+      </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:0,});
-    </script>
-    <script src="script.js"></script>
+
+    <!-- OFFER SECTION -->
+    <section class="container section-2">
+      <!-- offer 1 -->
+      <div class="offer offer-1">
+        <img src="9.jpg" alt="a computer in dark with with white shadow" class="offer-img offer-1-img">
+        <div class="offer-description offer-desc-1">
+          <h2 class="offer-title"> Velour Bloom</h2>
+          <p class="offer-hook">A delicate dance of peony and jasmine, wrapped in a soft veil of vanilla and white musk. It’s graceful, feminine, and timeless — like a warm breeze through a blooming garden.</p>
+          <div class="cart-btn">ADD TO CART</div>
+        </div>
+      </div>
+      <!-- offer 2 -->
+      <div class="offer offer-2">
+        <img src="8.jpg" alt="a opened computer" class="offer-img offer-2-img">
+        <div class="offer-description offer-desc-2">
+          <h2 class="offer-title">Citrus Noir</h2>
+          <p class="offer-hook">Zesty bursts of blood orange and bergamot meet the heat of pink pepper and clove. Anchored by cedarwood and patchouli, this scent is fresh with an unexpected dark twist.</p>
+          <div class="cart-btn">ADD TO CART</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="container section-3">
+      <!-- product - 1 -->
+      <div class="product product-1">
+        <img src="4.jpg" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 2 -->
+      <div class="product product-2">
+        <img src="3.jpg" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 3 -->
+      <div class="product product-3">
+        <img src="2.jpg" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 4 -->
+      <div class="product product-4">
+        <img src="1.jpg" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+    </section>
+
+    <!-- SPONSOR SECTION -->
+    <section></section>
+   
+  </main>
+  <footer>
+    <div class="container top-footer">
+      <!-- footer item 1 -->
+      <div class="footer-item">
+        <h2 class="footer-title">ADDRESS</h2>
+        <div class="footer-items">
+          <h3> Blank </h3>
+          <h3> Blank </h3>
+          <h3> Blank </h3>
+          <h3> Blank </h3>
+         
+        </div>
+      </div>
+      <!-- footer item 2 -->
+      <div class="footer-item">
+        <h2 class="footer-title">SERVICES</h2>
+        <div class="footer-items">
+          <h3> Blank </h3>
+          <h3> Blank </h3>
+          <h3> Blank </h3>
+          <h3> Blank </h3>
+        </div>
+      </div>
+      <!-- footer item 3 -->
+      <div class="footer-item">
+        <h2 class="footer-title">SUPPLIERS</h2>
+        <div class="footer-items">
+         <h3> Blank </h3>
+         <h3> Blank </h3>
+         <h3> Blank </h3>
+         <h3> Blank </h3>
+         <h3> Blank </h3>
+        </div>
+      </div>
+      <!-- footer item 4 -->
+      <div class="footer-item">
+        <h2 class="footer-title">INVESTMENT</h2>
+        <div class="footer-items">
+        <h3> Blank </h3>
+        <h3> Blank </h3>
+        <h3> Blank </h3>
+        <h3> Blank </h3>
+        <h3> Blank </h3>
+
+        </div>
+      </div>
+    </div>
+    
+  </footer>
 </body>
+
+<script type="web.script"></script>
 </html>
